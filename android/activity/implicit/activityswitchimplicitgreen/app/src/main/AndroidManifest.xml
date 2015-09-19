@@ -20,6 +20,10 @@ ActivitySwitchImplicit.
         <activity
             android:name="org.androidtutorials.activity.implicit.green.GreenActivity"
             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <intent-filter android:label="Green Activity" >
                 <action android:name="org.androidtutorials.intent.action.ACTION_COLOR" />
 
